@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "Your account information:\n$session.params.tier" ]
+        "text": [ "Your account information:\nTIER: $session.params.tier\nAMOUNT: $session.params.amount\nTIME: $session.params.time" ]
       },
       "languageCode": "en"
     } ]
