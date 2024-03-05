@@ -1,0 +1,50 @@
+{
+  "name": "0153a5bb-1a09-4a82-a7c9-5fa67bb52b0d",
+  "displayName": "confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Ok, proceed to checking balance for account id $session.params.account-id?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "image": {
+              "rawUrl": "https://example.com/images/logo.png"
+            },
+            "mode": "blocking",
+            "text": "Yes"
+          }, {
+            "image": {
+              "rawUrl": "https://example.com/images/logo.png"
+            },
+            "text": "No"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "test-intent-yes",
+    "triggerFulfillment": {
+      "webhook": "test-function",
+      "tag": "account-enquiry"
+    },
+    "targetPage": "show-result",
+    "name": "af079ccd-0a5a-48bc-9f45-c63010dbbda7"
+  }, {
+    "intent": "test-intent-no",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "503e491d-759a-4d54-bba8-e483858e4115"
+  } ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "f884202d-3355-45a3-8f8b-768012a7e400",
+  "displayName": "test-function",
+  "genericWebService": {
+    "uri": "https://asia-southeast1-dialogflow-408609.cloudfunctions.net/test-function"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

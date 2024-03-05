@@ -1,0 +1,29 @@
+{
+  "name": "62d6fa28-19d3-47d5-ada4-aa3e75db49ee",
+  "displayName": "get-account-info",
+  "form": {
+    "parameters": [ {
+      "displayName": "account-id",
+      "required": true,
+      "entityType": "@sys.number-integer",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "what is your account id?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "confirmation",
+    "name": "4dfd7cd1-cb79-4b8d-b136-0f7f075a2d48"
+  } ]
+}

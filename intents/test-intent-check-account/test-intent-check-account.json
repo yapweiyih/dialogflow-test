@@ -1,0 +1,6 @@
+{
+  "name": "b128eee8-bdd8-42b1-b023-991ed443dcc2",
+  "displayName": "test-intent-check-account",
+  "priority": 500000,
+  "numTrainingPhrases": 8
+}

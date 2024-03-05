@@ -1,0 +1,23 @@
+{
+  "name": "56e99a4f-d0b4-490a-b785-686d19014f42",
+  "displayName": "show-result",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Your account information:\n$session.params.tier" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "b5c1206f-7aad-4510-9b24-de31204369ca"
+  } ]
+}
